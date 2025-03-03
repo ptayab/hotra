@@ -1,0 +1,77 @@
+.nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(63, 77, 85);
+    padding-top: 20px;
+    min-width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(138, 180, 204);
+    overflow: hidden;
+}
+
+.contact-us {
+    display: flex;
+    background-color: rgb(63, 77, 85);
+    transform: skewX(20deg);
+    transform-origin: right top;
+    overflow: hidden;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.nav-links {
+    background-color: rgb(138, 180, 204);
+    height: 50px;
+    min-width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* padding-right: 20%; */
+}
+
+.nav-links a {
+    padding: 15px;
+    transform: skewX(-20deg);
+    font-size: 1.2em;
+    color: rgb(63, 77, 85);
+    text-decoration: none;
+    border: 0px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+}
+
+#location {
+    display: flex;
+    transform: skewX(-20deg);
+    font-size: 1.2em;
+    color: rgb(63, 77, 85);
+    font-family: 'Roboto';
+    margin-top: 25px;
+    margin-left: 30%;
+    margin-right: 5%;
+}
+
+#location p {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 5%; 
+}
+
+
+#logo {
+    max-width: 10%;
+    padding-left: 1%;
+}
+
+#consult-btn {
+    size: 1rem;
+    width: 10px;
+}
