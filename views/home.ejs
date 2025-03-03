@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     <%- include('header.ejs')%>
-    <h1>HOME</h1>
+    <div class="home-container"> 
+        <div class="cover">
+            <img src="/images/cover_page.jpg"  alt="Company logo" id="cover-page"/>
+            <h1>Your Friendly Neighborhood Plumbers</h1>
+            <h3>Providing Fast, Reliable, and Affordable Plumbing Solutions for Homes and Businesses</h3>
+            <button id="call-now-btn">Call Now</button>
+        </div>
+    </div>
 </body>
 </html>
