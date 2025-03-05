@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Need help? Call us or book an appointment online.</p>
+        
+        <div class="contact-options">
+            <div class="call-us">
+                <h2>Call Us</h2>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="contact-form">
+                <h2>Book an Appointment</h2>
+                <form action="/submit-contact" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="date">Preferred Date & Time (Optional):</label>
+                    <input type="datetime-local" id="date" name="date">
+                    
+                    <label for="service">Service Type:</label>
+                    <select id="service" name="service">
+                        <option value="HVAC">HVAC</option>
+                        <option value="BOILER">Boiler</option>
+                        <option value="DRAIN_CLEANING">Drain Cleaning</option>
+                        <option value="TOILET_REPAIR">Toilet Repair</option>
+                        <option value="RESIDENTIAL">Residential</option>
+                        <option value="OTHER">Other</option>
+                    </select>
+                    
+                    <label for="description">Describe Your Problem:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
