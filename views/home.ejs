@@ -3,18 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plumbing Services</title>
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <%- include('header.ejs')%>
+    <%- include('header.ejs') %>
     <div class="home-container"> 
         <div class="cover">
-            <img src="/images/cover_page.jpg"  alt="Company logo" id="cover-page"/>
-            <h1>Your Friendly Neighborhood Plumbers</h1>
-            <h3>Providing Fast, Reliable, and Affordable Plumbing Solutions for Homes and Businesses</h3>
-            <button id="call-now-btn">Call Now</button>
+            <div class="overlay"></div>
+            <img src="/images/cover_page.jpg" alt="Company logo" id="cover-page"/>
+            <div class="cover-content">
+                <h1>Your Friendly Neighborhood Plumbers</h1>
+                <h3>Providing Fast, Reliable, and Affordable Plumbing Solutions for Homes and Businesses</h3>
+                <button id="call-now-btn">Call Now</button>
+            </div>
         </div>
     </div>
+    <div class="why-us">
+        <h3 class="section-header">Why Choose Us?</h3>
+        <div class="why-us-content">
+            <ul class="why-us-list">
+                <li><strong>Quick Response Times</strong> – We’re always on time and ready to help.</li>
+                <li><strong>Licensed and Insured</strong> – Peace of mind with every service.</li>
+                <li><strong>Competitive Pricing</strong> – Get top-notch plumbing without breaking the bank.</li>
+                <li><strong>Eco-Friendly Solutions</strong> – We care about your home and the environment.</li>
+                <li><strong>Local Family-Owned</strong> – Proudly serving the community for over X years.</li>
+            </ul>
+            <div class="why-us-image">
+                <img src="/images/why_us.jpg" alt="Plumber at work">
+            </div>
+        </div>
+    </div>
+    <div class="core-values">
+        <h3 class="section-header">Our Core Values</h3>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-image-container">
+                    <img src="/images/integrity.jpg" alt="Integrity" class="value-image">
+                    <h4 class="value-title">Integrity</h4>
+                </div>
+                <div class="value-content">
+                    <p class="tagline">"We believe in doing the right thing every time, even when no one is watching."</p>
+                    <p>At [Your Company Name], honesty and transparency are at the heart of everything we do. From providing accurate estimates to explaining the necessary work, we ensure that our customers are always well-informed. We stand by our word, offer clear pricing, and never surprise our clients with hidden fees.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-image-container">
+                    <img src="/images/reliability.jpg" alt="Reliability" class="value-image">
+                    <h4 class="value-title">Reliability</h4>
+                </div>
+                <div class="value-content">
+                    <p class="tagline">"You can count on us, no matter what."</p>
+                    <p>Whether it's an emergency or a routine maintenance job, we prioritize being there when you need us most. Our team is dedicated to delivering dependable service and ensuring that every project is completed on time and to the highest standards. Our customers trust us to show up, get the job done, and exceed expectations.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-image-container">
+                    <img src="/images/quality.jpg" alt="Quality" class="value-image">
+                    <h4 class="value-title">Quality</h4>
+                </div>
+                <div class="value-content">
+                    <p class="tagline">"We don’t cut corners—our work speaks for itself."</p>
+                    <p>We believe that quality should never be compromised. We use the best tools, materials, and techniques to ensure that every plumbing job we handle is done right the first time. Whether it’s a simple repair or a complex installation, our goal is to deliver lasting, high-quality solutions that our customers can rely on for years to come.</p>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="value-image-container">
+                    <img src="/images/customer_service.jpg" alt="Customer Service" class="value-image">
+                    <h4 class="value-title">Customer-Centered Service</h4>
+                </div>
+                <div class="value-content">
+                    <p class="tagline">"Your satisfaction is our top priority."</p>
+                    <p>Our customers are the reason we do what we do. We go above and beyond to ensure that every service we provide is tailored to meet your unique needs. From offering friendly and professional assistance to following up after the job is done, we focus on creating a seamless, positive experience for every customer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-section">
+        <h3 class="section-header">Our Services</h3>
+        <div class="services-container">
+            <button class="service-btn" onclick="location.href='/services/residential-plumbing'">Residential Plumbing</button>
+            <button class="service-btn" onclick="location.href='/services/hvac'">HVAC Services</button>
+            <button class="service-btn" onclick="location.href='/services/drain-cleaning'">Drain Cleaning</button>
+            <button class="service-btn" onclick="location.href='/services/toilet-repair'">Toilet Repair & Install</button>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
