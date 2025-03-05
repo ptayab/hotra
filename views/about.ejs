@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/about.css">
 </head>
 <body>
-    <%- include('header.ejs')%>
-    <h1>ABOUT</h1>
+    <%- include('header.ejs') %>
+    
+    <section class="about-header">
+        <h1>About Us</h1>
+        <p>Honoring tradition, delivering quality, and serving our community.</p>
+    </section>
+
+    <section class="about-content">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+                Jose grew up in a humble family in the Philippines, where his father worked 
+                as a plumber to support their household. From a young age, Jose joined his 
+                father on various plumbing jobs, learning the trade firsthand. Despite the 
+                challenges they faced, Jose’s father taught him the importance of hard work 
+                and dedication, which became the foundation for everything Jose would later achieve.
+            </p>
+            <p>
+                With his father’s unwavering support, Jose pursued a degree in mechanical engineering 
+                and even became a professor. However, his connection to plumbing never faded. After 
+                moving to Saskatoon, Jose decided to return to plumbing professionally, working with 
+                several companies over the years and honing his craft.
+            </p>
+            <p>
+                After gaining valuable experience, Jose founded Hotra Plumbing 4 years ago with the goal 
+                of providing the Saskatoon community with reliable, high-quality plumbing services. 
+                He named the company Hotra Plumbing, a tribute to the same name his father once carried as 
+                a plumber, honoring the man who inspired him to reach for more.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="/images/jose-story.jpg" alt="Jose working as a plumber">
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Hotra Plumbing, we aim to provide the Saskatoon community with reliable, high-quality plumbing 
+            services that are rooted in years of experience and family values. We strive to treat every job 
+            with care, as if we were serving our own family, ensuring each customer receives the best service possible.
+        </p>
+    </section>
+
+    <section class="why-choose">
+        <h2>Why Choose Hotra Plumbing?</h2>
+        <ul>
+            <li><strong>Family-Oriented Service:</strong> Just like Jose learned from his father, we treat every job as a personal commitment.</li>
+            <li><strong>Years of Experience:</strong> Combining expertise in plumbing and engineering.</li>
+            <li><strong>Honoring Tradition:</strong> Continuing the legacy of quality plumbing services.</li>
+            <li><strong>Commitment to Quality:</strong> Ensuring every job is done right, no matter the size.</li>
+        </ul>
+    </section>
+
+    <%- include('footer.ejs') %>
 </body>
 </html>
