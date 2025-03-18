@@ -3,20 +3,27 @@
 <div class="nav-bar-container">
 
     <div class="nav-bar">
-        <img src="/images/temp_logo-removebg-preview.png"  alt="Company logo" id="logo"/>
+
 
         <div class="contact-us">
-            <button id="contact-us-btn">Book Online</button>
+            <img src="/images/logo.png"  alt="Company logo" id="logo"/>
+
             <div class="nav-links">
-            <a href="/" id="home-link">Home</a>
-            <a href="/about" id="about-link">About</a>
-            <a href="/services" id="services-link">Services</a>
-            <a href="/contact-us" id="contacts-link">Contact Us</a>
-            <div id="location">
-                <i class="fas fa-map-marker-alt"></i> <p>Servicing Saskatoon</p>
+
+                <a href="/" class="<%= (activePage === '/' ? 'active' : '') %>">Home</a>
+                <a href="/about" class="<%= (activePage === '/about' ? 'active' : '') %>">About</a>
+                <a href="/services" class="<%= (activePage === '/services' ? 'active' : '') %>">Services</a>
+                <a href="/contact-us" class="<%= activePage === '/contact-us' ? 'active' : '' %>">Contact</a>
+
+
+                
+                <!-- <div id="location">
+                    <i class="fas fa-map-marker-alt"></i> <p>Servicing Saskatoon</p>
+                </div> -->
             </div>
-            
-        </div>
+            <div class="btn-container">
+                <button id="contact-us-btn">Book Online</button>
+            </div>
         </div>
     </div>
 </div>

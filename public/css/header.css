@@ -1,52 +1,60 @@
 .nav-bar-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(63, 77, 85);
-    padding-top: 20px;
-    min-width: 100%;
+    /* background-color: rgb(254, 223, 90); */
+    background-color: rgb(23, 68, 136);
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    /* min-width: 100%; */
     border: none;
 }
 
 .nav-bar {
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(25, 19, 19);
     overflow: hidden;
     border: none;
+    height: 5rem;
+    justify-content: center;
 }
 
 .contact-us {
     display: flex;
-    flex-direction: column;
-
-    background-color: rgb(63, 77, 85);
-    /* transform: skewX(20deg);
-    transform-origin: right top; */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 2% 100%);
-    overflow: hidden;
-    align-items: flex-end;
-    justify-content: flex-end; 
-    width: 100%;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    background-color: rgb(254, 223, 90);
+    min-width: 100%;
 }
 
 .nav-links {
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    min-width: 100%;
+    /* background-color: rgb(23, 68, 136); */
+    background-color: rgb(254, 223, 90);
+    height: 100%;
+    /* margin-left: 20%; */
+    /* min-width: 100vw; */
     display: flex;
-    justify-content: end;
-    align-items: center;
+    align-items: end;
+    justify-content: center; 
 }
 
 .nav-links a {
     padding: 15px;
     font-size: 1.2em;
-    color: rgb(63, 77, 85);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    border: 0px;
-    position: relative;
     font-family: 'Roboto', sans-serif;
-    padding: 1%;
+    flex-grow: 1; 
+    display: flex;
+    align-items: end;
+    justify-content: center; 
+}
+
+.nav-links a.active {
+    background-color:rgb(23, 68, 136);
+    color: rgb(255, 255, 255);
+    height: 100%;
 }
 
 .nav-links a:hover {
@@ -55,7 +63,6 @@
 
 #location {
     display: flex;
-    /* transform: skewX(-20deg); */
     font-size: 1.2em;
     color: rgb(63, 77, 85);
     font-family: 'Roboto';
@@ -75,10 +82,11 @@
 
 
 #logo {
-    overflow: hidden;
-    max-height: 130px;
-    margin-top: .5%;
-    padding: .2rem;
+    max-height: 83px;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    /* background-color: white; */
 }
 
 #consult-btn {
@@ -86,19 +94,31 @@
     width: 10px;
 }
 
+.btn-container {
+    display: flex;
+    /* background-color: white; */
+    /* padding-top: 30px; */
+    height: 100%;
+    align-items: end;
+    padding-left: 20px;
+    /* justify-items: center; */
+}
+
 #contact-us-btn {
-    background-color: white;
-    height: 3.5rem;
-    width: 20rem;
-    margin-bottom: 2.5%;
+    background-color: rgb(23, 68, 136);
+    height: 80%;
+    width: 10rem;
+    border-radius: 5px; 
+    margin-bottom: 1.5%;
     margin-right: 2.5%;
-    color: #3f4d55;
+    color: #f8f8f8;
     font-size: 1.5em; 
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding: 10px;
     z-index: 1; 
 }
+
 #contact-us-btn:hover {
     background-color:  #1f96e6;
     color: white;

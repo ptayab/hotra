@@ -1,4 +1,8 @@
-/* Contact Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .contact-container {
     max-width: 900px;
     margin: 0 auto;
